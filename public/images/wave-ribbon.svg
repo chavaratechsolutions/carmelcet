@@ -1,0 +1,106 @@
+<svg
+          viewBox="0 0 1440 600"
+          fill="none"
+          preserveAspectRatio="xMidYMid slice"
+          class="w-full h-full"
+        >
+
+          <defs>
+            
+            
+            
+            <linearGradient id="wave-brand-navy-soft" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#1B4985" stop-opacity="0.06" />
+              <stop offset="35%" stop-color="#0B2347" stop-opacity="0.12" />
+              <stop offset="75%" stop-color="#071526" stop-opacity="0.18" />
+              <stop offset="100%" stop-color="#1B4985" stop-opacity="0.08" />
+            </linearGradient>
+
+            
+            <linearGradient id="wave-brand-navy-deep" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#1B365D" stop-opacity="0.16" />
+              <stop offset="30%" stop-color="#0B2347" stop-opacity="0.32" />
+              <stop offset="75%" stop-color="#071526" stop-opacity="0.48" />
+              <stop offset="100%" stop-color="#0C1E37" stop-opacity="0.22" />
+            </linearGradient>
+
+            
+            <linearGradient id="wave-brand-navy-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0B2347" stop-opacity="0.25" />
+              <stop offset="35%" stop-color="#1B4985" stop-opacity="0.32" />
+              <stop offset="70%" stop-color="#C88A24" stop-opacity="0.40" />
+              <stop offset="100%" stop-color="#E5A93C" stop-opacity="0.30" />
+            </linearGradient>
+
+            
+            <linearGradient id="wave-brand-gold-core" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#C88A24" stop-opacity="0.32" />
+              <stop offset="30%" stop-color="#E5A93C" stop-opacity="0.55" />
+              <stop offset="75%" stop-color="#F0A51A" stop-opacity="0.70" />
+              <stop offset="100%" stop-color="#C88A24" stop-opacity="0.40" />
+            </linearGradient>
+
+            
+            <linearGradient id="wave-brand-yellow-warm" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#E5A93C" stop-opacity="0.25" />
+              <stop offset="40%" stop-color="#F0A51A" stop-opacity="0.45" />
+              <stop offset="80%" stop-color="#C88A24" stop-opacity="0.50" />
+              <stop offset="100%" stop-color="#0B2347" stop-opacity="0.20" />
+            </linearGradient>
+
+            
+            <linearGradient id="wave-brand-highlight-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#F0A51A" stop-opacity="0.2" />
+              <stop offset="25%" stop-color="#FDE68A" stop-opacity="0.7" />
+              <stop offset="65%" stop-color="#FFFFFF" stop-opacity="0.95" />
+              <stop offset="90%" stop-color="#F9C66B" stop-opacity="0.7" />
+              <stop offset="100%" stop-color="#C88A24" stop-opacity="0.3" />
+            </linearGradient>
+
+            
+            <linearGradient id="wave-brand-contour-navy" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#1B4985" stop-opacity="0.25" />
+              <stop offset="40%" stop-color="#0B2347" stop-opacity="0.60" />
+              <stop offset="80%" stop-color="#071526" stop-opacity="0.75" />
+              <stop offset="100%" stop-color="#1B4985" stop-opacity="0.30" />
+            </linearGradient>
+
+            
+            <linearGradient id="wave-brand-contour-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#C88A24" stop-opacity="0.3" />
+              <stop offset="50%" stop-color="#F0A51A" stop-opacity="0.8" />
+              <stop offset="100%" stop-color="#C88A24" stop-opacity="0.4" />
+            </linearGradient>
+          </defs>
+
+          <path d="M 0.0,254.4 C 170.0,315.7 310.0,382.4 450.0,374.0 C 630.0,351.6 860.0,57.7 1080.0,50.0 C 1220.0,37.0 1360.0,136.4 1440.0,171.2 L 1440.0,206.6 C 1360.0,170.8 1220.0,69.5 1080.0,80.0 C 860.0,86.2 630.0,373.8 450.0,392.0 C 310.0,398.9 170.0,327.7 0.0,259.2 Z" fill="url(#wave-brand-navy-soft)" />
+          <path d="M 0.0,259.2 C 170.0,327.7 310.0,398.9 450.0,392.0 C 630.0,373.8 860.0,86.2 1080.0,80.0 C 1220.0,69.5 1360.0,170.8 1440.0,206.6 L 1440.0,242.0 C 1360.0,205.2 1220.0,101.9 1080.0,110.0 C 860.0,114.8 630.0,396.0 450.0,410.0 C 310.0,415.3 170.0,339.8 0.0,264.0 Z" fill="url(#wave-brand-navy-soft)" />
+          <path d="M 0.0,264.0 C 170.0,339.8 310.0,415.3 450.0,410.0 C 630.0,396.0 860.0,114.8 1080.0,110.0 C 1220.0,101.9 1360.0,205.2 1440.0,242.0 L 1440.0,277.4 C 1360.0,239.7 1220.0,134.3 1080.0,140.0 C 860.0,143.4 630.0,418.2 450.0,428.0 C 310.0,431.7 170.0,351.9 0.0,268.8 Z" fill="url(#wave-brand-navy-deep)" />
+          <path d="M 0.0,268.8 C 170.0,351.9 310.0,431.7 450.0,428.0 C 630.0,418.2 860.0,143.4 1080.0,140.0 C 1220.0,134.3 1360.0,239.7 1440.0,277.4 L 1440.0,310.4 C 1360.0,271.8 1220.0,164.6 1080.0,168.0 C 860.0,170.0 630.0,438.9 450.0,444.8 C 310.0,447.0 170.0,363.1 0.0,273.3 Z" fill="url(#wave-brand-navy-deep)" />
+          <path d="M 0.0,273.3 C 170.0,363.1 310.0,447.0 450.0,444.8 C 630.0,438.9 860.0,170.0 1080.0,168.0 C 1220.0,164.6 1360.0,271.8 1440.0,310.4 L 1440.0,341.1 C 1360.0,301.6 1220.0,192.7 1080.0,194.0 C 860.0,194.8 630.0,458.2 450.0,460.4 C 310.0,461.2 170.0,373.6 0.0,277.4 Z" fill="url(#wave-brand-navy-gold)" />
+          <path d="M 0.0,277.4 C 170.0,373.6 310.0,461.2 450.0,460.4 C 630.0,458.2 860.0,194.8 1080.0,194.0 C 1220.0,192.7 1360.0,301.6 1440.0,341.1 L 1440.0,371.8 C 1360.0,331.5 1220.0,220.8 1080.0,220.0 C 860.0,219.5 630.0,477.4 450.0,476.0 C 310.0,475.5 170.0,384.0 0.0,281.6 Z" fill="url(#wave-brand-gold-core)" />
+          <path d="M 0.0,281.6 C 170.0,384.0 310.0,475.5 450.0,476.0 C 630.0,477.4 860.0,219.5 1080.0,220.0 C 1220.0,220.8 1360.0,331.5 1440.0,371.8 L 1440.0,402.5 C 1360.0,361.3 1220.0,248.9 1080.0,246.0 C 860.0,244.3 630.0,496.6 450.0,491.6 C 310.0,489.7 170.0,394.5 0.0,285.8 Z" fill="url(#wave-brand-yellow-warm)" />
+          <path d="M 0.0,285.8 C 170.0,394.5 310.0,489.7 450.0,491.6 C 630.0,496.6 860.0,244.3 1080.0,246.0 C 1220.0,248.9 1360.0,361.3 1440.0,402.5 L 1440.0,430.8 C 1360.0,388.9 1220.0,274.9 1080.0,270.0 C 860.0,267.1 630.0,514.4 450.0,506.0 C 310.0,502.8 170.0,404.1 0.0,289.6 Z" fill="url(#wave-brand-navy-deep)" />
+          <path d="M 0.0,289.6 C 170.0,404.1 310.0,502.8 450.0,506.0 C 630.0,514.4 860.0,267.1 1080.0,270.0 C 1220.0,274.9 1360.0,388.9 1440.0,430.8 L 1440.0,460.3 C 1360.0,417.5 1220.0,301.9 1080.0,295.0 C 860.0,290.9 630.0,532.9 450.0,521.0 C 310.0,516.5 170.0,414.2 0.0,293.6 Z" fill="url(#wave-brand-navy-soft)" />
+          
+          <path
+            d="M 0.0,277.4 C 170.0,373.6 310.0,461.2 450.0,460.4 C 630.0,458.2 860.0,194.8 1080.0,194.0 C 1220.0,192.7 1360.0,301.6 1440.0,341.1"
+            fill="none"
+            stroke="url(#wave-brand-highlight-gold)"
+            stroke-width="3.0"
+          />
+          
+          <path
+            d="M 0.0,268.8 C 170.0,351.9 310.0,431.7 450.0,428.0 C 630.0,418.2 860.0,143.4 1080.0,140.0 C 1220.0,134.3 1360.0,239.7 1440.0,277.4"
+            fill="none"
+            stroke="url(#wave-brand-contour-navy)"
+            stroke-width="1.8"
+          />
+          
+          <path
+            d="M 0.0,281.6 C 170.0,384.0 310.0,475.5 450.0,476.0 C 630.0,477.4 860.0,219.5 1080.0,220.0 C 1220.0,220.8 1360.0,331.5 1440.0,371.8"
+            fill="none"
+            stroke="url(#wave-brand-contour-gold)"
+            stroke-width="1.6"
+          />
+        </svg>

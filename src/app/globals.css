@@ -1,0 +1,380 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --nav-top-height: 36px;
+    --nav-main-height: 84px;
+    --nav-total-height: 120px;
+    --stats-strip-height: 144px;
+    --stats-half-height: 72px;
+    --hero-deduction: 192px;
+    --font-serif: "Playfair Display", Georgia, serif;
+    --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827;
+    font-family: var(--font-sans), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Custom background patterns matching reference screenshot */
+.hero-dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.25) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.hero-concentric-rings {
+  background: radial-gradient(circle at 100% 0%, transparent 200px, rgba(229, 169, 60, 0.12) 201px, transparent 202px, transparent 320px, rgba(229, 169, 60, 0.1) 321px, transparent 322px, transparent 460px, rgba(229, 169, 60, 0.08) 461px, transparent 462px, transparent 620px, rgba(229, 169, 60, 0.05) 621px, transparent 622px);
+}
+
+.admissions-dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+@keyframes heroProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-hero-progress {
+  animation: heroProgress linear forwards;
+}
+
+/* ========================================================
+   LANDING PAGE ENTRANCE ANIMATIONS (First-Page Experience)
+   ======================================================== */
+
+/* Refined, silky smooth navbar reveal */
+@keyframes navSmoothReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes navLogoEntrance {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes navLinksEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes navActionsEntrance {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroBackdropZoom {
+  0% {
+    opacity: 0;
+    transform: scale(1.07);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroBadgePop {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes statsCardLift {
+  0% {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes goldShimmerSweep {
+  0% {
+    left: -100%;
+  }
+  20%, 100% {
+    left: 200%;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.12;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.28;
+    transform: scale(1.08);
+  }
+}
+
+/* Entrance Animation Utility Classes */
+.animate-navbar-smooth {
+  animation: navSmoothReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-nav-logo {
+  opacity: 0;
+  animation: navLogoEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.08s forwards;
+}
+
+.animate-nav-links {
+  opacity: 0;
+  animation: navLinksEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.16s forwards;
+}
+
+.animate-nav-actions {
+  opacity: 0;
+  animation: navActionsEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.24s forwards;
+}
+
+.animate-hero-backdrop {
+  animation: heroBackdropZoom 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-hero-badge {
+  opacity: 0;
+  animation: heroBadgePop 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+}
+
+.animate-hero-title {
+  opacity: 0;
+  animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+.animate-hero-desc {
+  opacity: 0;
+  animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.45s forwards;
+}
+
+.animate-hero-actions {
+  opacity: 0;
+  animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+}
+
+.animate-stats-card {
+  opacity: 0;
+  animation: statsCardLift 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.75s forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+.btn-gold-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gold-shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: goldShimmerSweep 5s ease-in-out infinite 1.8s;
+  pointer-events: none;
+}
+
+/* Recruiter Logo Marquee - Dual Row Opposing Tickers */
+@keyframes marqueeLeftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marqueeRightToLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-ltr {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeftToRight 75s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-rtl {
+  display: flex;
+  width: max-content;
+  animation: marqueeRightToLeft 75s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-ltr:hover,
+.animate-marquee-rtl:hover {
+  animation-play-state: paused;
+}
+
+/* ========================================================
+   SCROLL-TRIGGERED REVEAL ANIMATIONS (Every Section)
+   ======================================================== */
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered Child Element Reveals */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.is-revealed.reveal-stagger > *:nth-child(1),
+.is-revealed .reveal-stagger > *:nth-child(1) {
+  transition-delay: 0.06s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.is-revealed.reveal-stagger > *:nth-child(2),
+.is-revealed .reveal-stagger > *:nth-child(2) {
+  transition-delay: 0.14s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.is-revealed.reveal-stagger > *:nth-child(3),
+.is-revealed .reveal-stagger > *:nth-child(3) {
+  transition-delay: 0.22s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.is-revealed.reveal-stagger > *:nth-child(4),
+.is-revealed .reveal-stagger > *:nth-child(4) {
+  transition-delay: 0.30s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.is-revealed.reveal-stagger > *:nth-child(5),
+.is-revealed .reveal-stagger > *:nth-child(5) {
+  transition-delay: 0.38s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.is-revealed.reveal-stagger > *:nth-child(6),
+.is-revealed .reveal-stagger > *:nth-child(6) {
+  transition-delay: 0.46s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.is-revealed.reveal-stagger > *:nth-child(7),
+.is-revealed .reveal-stagger > *:nth-child(7) {
+  transition-delay: 0.54s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll,
+  .reveal-stagger > *,
+  .animate-navbar-smooth,
+  .animate-nav-logo,
+  .animate-nav-links,
+  .animate-nav-actions,
+  .animate-hero-backdrop,
+  .animate-hero-badge,
+  .animate-hero-title,
+  .animate-hero-desc,
+  .animate-hero-actions,
+  .animate-stats-card,
+  .animate-pulse-glow,
+  .btn-gold-shimmer::after,
+  .animate-marquee-ltr,
+  .animate-marquee-rtl {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
