@@ -31,9 +31,10 @@ const heroSlides = [
 ];
 
 const heroBackgrounds = [
-  "/images/hero%20main/356507398_2026-09-30_05-05-19.jpg",
-  "/images/hero%20main/3Q6A4782.JPG",
+  "/images/hero%20main/3Q6A3231.JPG",
   "/images/hero%20main/3Q6A4033.JPG",
+  "/images/hero%20main/3Q6A4287.JPG",
+  "/images/hero%20main/3Q6A4782.JPG",
 ];
 
 export default function Hero() {
